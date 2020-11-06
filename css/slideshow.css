@@ -1,0 +1,121 @@
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    overflow-x: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-container::before {
+    content: "";
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("/img/city1.png");
+    background-size: cover;
+    background-position: bottom;
+
+    opacity: 0.1;
+    z-index: -99999;
+}
+
+.slideshow-item {
+    /* Display settings for non-specific items */
+    display: inline-flex;
+    position: relative;
+    display: none;
+    
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.slideshow-item {
+    padding: 10px;
+}
+
+.slideshow-item-container {
+    position: relative;
+    width: 100%;
+
+    flex-grow: 8;
+}
+
+.slideshow-item-container > .slideshow-item:nth-child(1) {
+    display: flex;
+    position: absolute;
+
+    left: 0%;
+    top: 0%;
+}
+
+.slideshow-item-container > .slideshow-item:nth-child(2) {
+    display: flex;
+
+    left: 100%;
+    top: 0%;
+}
+
+.slideshow-navigation-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    /*height: 20%;*/
+
+    flex-grow: 2;
+}
+
+@keyframes slideshow-next-first-item {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes slideshow-next-second-item {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes slideshow-prev-first-item {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes slideshow-prev-last-item {
+    0% {
+        left: -100%;
+        top: 0%;
+        position: absolute;
+    }
+
+    100% {
+        left: 0%;
+        top: 0%;
+        position: absolute;
+    }
+}

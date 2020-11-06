@@ -1,0 +1,112 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.flex-full {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-row-res {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+/* Center items in flex */
+
+.flex-row-res.flex-center-v,
+.flex-row.flex-center-v {
+    align-items: center;
+}
+
+.flex-row-res.flex-center-h,
+.flex-row.flex-center-h {
+    justify-content: center;
+}
+
+.flex-column.flex-center-v {
+    justify-content: center;
+}
+
+.flex-column.flex-center-h {
+    align-items: center;
+}
+
+/* Growth */
+
+.flex-1 {
+    flex-grow: 1;
+}
+
+.flex-2 {
+    flex-grow: 2;
+}
+
+.flex-3 {
+    flex-grow: 3;
+}
+
+.flex-4 {
+    flex-grow: 4;
+}
+
+.flex-5 {
+    flex-grow: 5;
+}
+
+.flex-6 {
+    flex-grow: 6;
+}
+
+.flex-7 {
+    flex-grow: 7;
+}
+
+.flex-8 {
+    flex-grow: 8;
+}
+
+.flex-9 {
+    flex-grow: 9;
+}
+
+.flex-10 {
+    flex-grow: 10;
+}
+
+.flex-11 {
+    flex-grow: 11;
+}
+
+.flex-12 {
+    flex-grow: 12;
+}
+
+@media only screen and (max-width: 900px) {
+    .flex-row-res {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-around;
+    }
+
+    .flex-row-res.flex-center-v {
+        justify-content: center;
+    }
+    
+    .flex-row-res.flex-center-h {
+        align-items: center;
+    }
+}

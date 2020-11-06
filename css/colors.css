@@ -1,0 +1,39 @@
+:root {
+    --theme-color-white: #FFFFFF;
+    --theme-color-light-gray: #F3F5F7;
+    --theme-color-lighter-gray: #CACBCB;
+    --theme-color-gray: #D3D3D3;
+    --theme-color-dark-gray: #9A9A9A;
+    --theme-color-darker-gray: #7E7E7E;
+    --theme-color-light-blue: #44BFEF;
+    --theme-color-black: #000000;
+
+    --main-bg-color: var(--theme-color-white);
+
+    --navbar-link-color: var(--theme-color-black);
+    --navbar-link-active-color: #1DA0DA;
+    --navbar-client-area-color: var(--theme-color-light-blue);
+
+    --footer-bg-color: #2E3234;
+    --footer-heading-color: #FFFFFF;
+    --footer-item-color: #B8B8B8;
+
+    --btn-bg-color: var(--navbar-link-active-color);
+    --btn-fg-color: var(--footer-heading-color);
+
+    --btn-white-fg-color: var(--theme-color-black);
+    --btn-white-bg-color: var(--theme-color-white);
+    --btn-white-border-color: var(--theme-color-lighter-gray);
+
+    --btn-pill-border-color: var(--theme-color-black);
+
+    --card-bg-color: var(--theme-color-light-gray);
+    --card-icon-fg-color: var(--theme-color-dark-gray);
+    --card-heading-fg-color: var(--theme-color-dark-gray);
+    --card-list-fg-color: var(--theme-color-darker-gray);
+    --card-price-fg-color: var(--theme-color-light-blue);
+
+    --tile-border-color: var(--theme-color-lighter-gray);
+    --tile-heading-fg-color: var(--theme-color-gray);
+    --tile-text-fg-color: var(--theme-color-darker-gray);
+}

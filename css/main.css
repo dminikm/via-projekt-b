@@ -1,0 +1,27 @@
+@import "fonts.css";
+@import "navigation.css";
+@import "footer.css";
+@import "slideshow.css";
+@import "button.css";
+@import "flex.css";
+@import "card.css";
+@import "image-card.css";
+@import "tile.css";
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Baskerville Bold";
+    src: url("/fonts/LibreBaskerville-Bold.ttf")
+}
+
+:root {
+    --serif-font: Georgia, 'Times New Roman', Times, serif;
+    --sans-serif-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --footer-heading-font: 'Baskerville Bold', var(--serif-font);
+    --footer-item-font: var(--sans-serif-font);
+
+    --btn-font: var(--footer-heading-font);
+    --btn-pill-font: var(--footer-item-font);
+
+    --card-heading-font: var(--footer-heading-font);
+
+    --tile-heading-font: 'Baskerville Bold', var(--serif-font);
+}
+
+.font-serif {
+    font-family: var(--serif-font) !important;
+}
+
+.font-sans {
+    font-family: var(--sans-serif-font) !important;
+}

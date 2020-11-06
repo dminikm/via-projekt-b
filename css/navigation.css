@@ -1,0 +1,55 @@
+@import "colors.css";
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+
+    height: 75px;
+    width: 100%;
+
+    background-color: var(--main-bg-color);
+}
+
+.main-header > div {
+    flex: 1 50%;
+}
+
+.main-header > nav {
+    display: flex;
+    flex: 1 50%;
+    align-items: center;
+    
+    padding-left: 50px;
+}
+
+.main-header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--navbar-link-color);
+
+    margin-right: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main-header #navbar-link-active {
+    color: var(--navbar-link-active-color);
+    background: linear-gradient(180deg, var(--main-bg-color) 0%, var(--main-bg-color) 29px, var(--navbar-link-active-color) 29px);
+}
+
+#navbar-client-area {
+    text-transform: capitalize;
+    color: var(--navbar-client-area-color);
+}
+
+@media only screen and (max-width: 900px) {
+    .main-header {
+        display: none;
+    }
+}
