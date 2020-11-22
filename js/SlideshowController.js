@@ -4,7 +4,7 @@ class SlideshowController {
      */
     constructor(container) {
         this.container = container;
-        this.itemContainer = /** @type {HTMLElement} */ (container.querySelector('.presentation-item-container'));
+        this.itemContainer = /** @type {HTMLElement} */ (container.querySelector('.slideshow-item-container'));
         this.ongoing = false;
     }
 
@@ -36,8 +36,8 @@ class SlideshowController {
         firstChild.addEventListener('animationend', callback);
 
         // Start animations
-        firstChild.style.animation = '1s ease-in-out presentation-next-first-item';
-        secondChild.style.animation = '1s ease-in-out presentation-next-second-item';
+        firstChild.style.animation = '1s ease-in-out slideshow-next-first-item';
+        secondChild.style.animation = '1s ease-in-out slideshow-next-second-item';
     }
 
     onPrev() {
@@ -70,8 +70,8 @@ class SlideshowController {
         firstChild.addEventListener('animationend', callback);
 
         // Start animations
-        firstChild.style.animation = '1s ease-in-out presentation-prev-first-item';
-        lastChild.style.animation = '1s ease-in-out presentation-prev-last-item';
+        firstChild.style.animation = '1s ease-in-out slideshow-prev-first-item';
+        lastChild.style.animation = '1s ease-in-out slideshow-prev-last-item';
         lastChild.style.display = 'flex';
     }
 }

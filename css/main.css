@@ -7,6 +7,8 @@
 @import "card.css";
 @import "image-card.css";
 @import "tile.css";
+@import "hideable-text.css";
+@import "testimonial.css";
 
 html, body {
     padding: 0px;

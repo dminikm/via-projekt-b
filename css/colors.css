@@ -6,12 +6,13 @@
     --theme-color-dark-gray: #9A9A9A;
     --theme-color-darker-gray: #7E7E7E;
     --theme-color-light-blue: #44BFEF;
+    --theme-color-blue: #1DA0DA;
     --theme-color-black: #000000;
 
     --main-bg-color: var(--theme-color-white);
 
     --navbar-link-color: var(--theme-color-black);
-    --navbar-link-active-color: #1DA0DA;
+    --navbar-link-active-color: var(--theme-color-blue);
     --navbar-client-area-color: var(--theme-color-light-blue);
 
     --footer-bg-color: #2E3234;

@@ -94,7 +94,7 @@
     flex-grow: 12;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     .flex-row-res {
         display: flex;
         flex-direction: column;

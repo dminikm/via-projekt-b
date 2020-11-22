@@ -9,7 +9,7 @@
     height: 100%;
 }
 
-.slideshow-container::before {
+#main-slideshow::before {
     content: "";
 
     position: absolute;
