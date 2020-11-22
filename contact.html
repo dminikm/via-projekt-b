@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/361a34c661.js" crossorigin="anonymous"></script>
+    <title>Projekt B</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div id="main-header-logo">
+            <img src="img/logo.png">
+        </div>
+        <nav class="navbar">
+            <div>
+                <a href="index.html" class="navbar-link">Home</a>
+            </div>
+
+            <div class="navbar-expandable-link">
+                <a href="#" class="navbar-link">Products <em class="fas fa-chevron-down"></em></a>
+                <div class="navbar-hidden-container">
+                    <a href="#" class="navbar-link">asd</a>
+                    <a href="#" class="navbar-link">asd</a>
+                    <a href="#" class="navbar-link">asd</a>
+                    <a href="#" class="navbar-link">asd</a>
+                    <a href="#" class="navbar-link">asd</a>
+                </div>
+            </div>
+
+            <div class="navbar-expandable-link">
+                <a href="#" class="navbar-link">About <em class="fas fa-chevron-down"></em></a>
+                <div class="navbar-hidden-container">
+                    <a href="#" class="navbar-link">Us</a>
+                    <a href="#" class="navbar-link">Our products</a>
+                </div>
+            </div>
+            
+            <a href="contact.html" id="navbar-link-active" class="navbar-link">Contact</a>
+            <a href="#" id="navbar-client-area" class="navbar-link"><em class="fa fa-user"></em> Client area</a>
+        </nav>
+    </header>
+
+    <div class="path-bar">
+        <div><em class="fas fa-envelope"></em>Contact</div>
+    </div>
+
+    <main>
+        <div class="flex-column flex-full-w flex-center-v">
+            <div class="flex-column flex-full-w flex-center-v flex-center-h">
+                <form class="contact-form">
+                    <div>
+                        <input class="contact-form-txt-input" type="text" placeholder="Username" minlength="4" required>
+                        <input class="contact-form-txt-input" type="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <input class="contact-form-txt-input" type="text" placeholder="Phone" required>
+                        <input class="contact-form-txt-input" type="text" placeholder="Subject" optional>
+                    </div>
+                    <div>
+                        <input class="contact-form-txt-input" type="text" placeholder="Message" multiple required>
+                    </div>
+                    <div>
+                        <input type="submit" placeholder="Send">
+                    </div>
+                </form>
+            </div>
+            <iframe height="600px" src="https://www.openstreetmap.org/export/embed.html?bbox=18.1591209769249%2C49.8310104778861%2C18.162661492824558%2C49.83249318802505&amp;layer=mapnik&amp;marker=49.831752703695955%2C18.160891234874725" style="border: 1px solid black">
+            </iframe><br/>
+        </div>
+    </main>
+
+    <!-- TODO: Add icons -->
+    <footer class="main-footer">
+        <div class="main-footer-container">
+            <div class="main-footer-navigation">
+                <div class="main-footer-navigation-list">
+                    <h1>Get in touch ;)</h1>
+                    <span>Ostrava</span>
+                    <span>+420 123 456 789</span>
+                    <span>meca.dominik.st@vsb.cz</span>
+                    <span>Monday - Saturday: 8:00 AM - 18:00 PM Friday: Closed</span>
+                </div>
+                <div class="main-footer-navigation-list">
+                    <h1>Products</h1>
+                    <a href="#">Shared Hosting</a>
+                    <a href="#">Cloud Hosting</a>
+                    <a href="#">Dedicated Hosting</a>
+                    <a href="#">Domains</a>
+                    <a href="#">Support</a>
+                    <a href="#">Seo</a>
+                    <a href="#">Web Design</a>
+                    <a href="#">Web Development</a>
+                </div>
+                <div class="main-footer-navigation-list">
+                    <h1>Company</h1>
+                    <a href="#">About us</a>
+                    <a href="#">Client Area</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Knowledge Base</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                </div>
+                <div>
+                    <div class="main-footer-navigation-list">
+                        <h1>Follow us</h1>
+                        <div class="main-footer-navigation-list-icon">
+                            <a href="#"><em class="fa fa-facebook-official"></em></a>
+                            <a href="#"><em class="fa fa-twitter"></em></a>
+                            <a href="#"><em class="fa fa-instagram"></em></a>
+                            <a href="#"><em class="fa fa-google-plus"></em></a>
+                            <a href="#"><em class="fa fa-pinterest"></em></a>
+                        </div>
+                    </div>
+                    <div class="main-footer-navigation-list">
+                        <h1>Payment</h1>
+                        <div class="main-footer-navigation-list-icon">
+                            <a href="#"><em class="fab fa-2x fa-cc-visa"></em></a>
+                            <a href="#"><em class="fab fa-2x fa-cc-mastercard"></em></a>
+                            <a href="#"><em class="fab fa-2x fa-cc-paypal"></em></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer-copyright">
+                <div>
+                    © 2020 Dominik Meca (MEC0037). Studentský projekt.
+                </div>
+                <div>
+                    <a href="#">Terms of services</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

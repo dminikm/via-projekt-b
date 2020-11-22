@@ -1,8 +1,9 @@
 #testimonial-slideshow {
     position: relative;
-
-    width: 600px;
+    max-width: 600px;
     height: 350px;
+
+    margin: 20px;
 
     background-color: var(--theme-color-light-gray);
 
@@ -63,4 +64,10 @@
 
 #testimonial-slideshow > .slideshow-item-container > .slideshow-item {
     padding: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #testimonial-slideshow {
+        max-width: 320px;
+    }
 }

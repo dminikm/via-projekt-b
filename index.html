@@ -13,15 +13,35 @@
 
 <body>
     <header class="main-header">
-        <div>
-            <!-- TODO: Add logo -->
+        <div id="main-header-logo">
+            <img src="img/logo.png">
         </div>
-        <nav>
-            <a href="#" id="navbar-link-active">Home</a>
-            <a href="#">Products</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#" id="navbar-client-area"><em class="fa fa-user"></em> Client area</a>
+        <nav class="navbar">
+            <div>
+                <a href="index.html" id="navbar-link-active" class="navbar-link">Home</a>
+            </div>
+
+            <div class="navbar-expandable-link">
+                <a href="#" class="navbar-link">Products <em class="fas fa-chevron-down"></em></a>
+                <div class="navbar-hidden-container">
+                    <a href="#" class="navbar-link">asd</a>
+                    <a href="#" class="navbar-link">asd</a>
+                    <a href="#" class="navbar-link">asd</a>
+                    <a href="#" class="navbar-link">asd</a>
+                    <a href="#" class="navbar-link">asd</a>
+                </div>
+            </div>
+
+            <div class="navbar-expandable-link">
+                <a href="#" class="navbar-link">About <em class="fas fa-chevron-down"></em></a>
+                <div class="navbar-hidden-container">
+                    <a href="#" class="navbar-link">Us</a>
+                    <a href="#" class="navbar-link">Our products</a>
+                </div>
+            </div>
+            
+            <a href="contact.html" class="navbar-link">Contact</a>
+            <a href="#" id="navbar-client-area" class="navbar-link"><em class="fa fa-user"></em> Client area</a>
         </nav>
     </header>
 
@@ -288,9 +308,9 @@
             <div class="main-footer-navigation">
                 <div class="main-footer-navigation-list">
                     <h1>Get in touch ;)</h1>
-                    <span>Ostrava boi</span>
-                    <span>+666</span>
-                    <span>mec0037@vsb.cz</span>
+                    <span>Ostrava</span>
+                    <span>+420 123 456 789</span>
+                    <span>meca.dominik.st@vsb.cz</span>
                     <span>Monday - Saturday: 8:00 AM - 18:00 PM Friday: Closed</span>
                 </div>
                 <div class="main-footer-navigation-list">

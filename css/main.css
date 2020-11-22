@@ -9,12 +9,15 @@
 @import "tile.css";
 @import "hideable-text.css";
 @import "testimonial.css";
+@import "path.css";
+@import "contact-form.css";
 
 html, body {
     padding: 0px;
     margin: 0px;
 
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
 }
 
 body {
