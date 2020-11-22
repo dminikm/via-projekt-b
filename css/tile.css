@@ -28,6 +28,8 @@
 .tile-content > div {
     font-family: var(--sans-serif-font);
     color: var(--tile-text-fg-color);
+
+    font-size: 14px;
 }
 
 .tile-content > h2 {

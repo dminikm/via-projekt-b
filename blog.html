@@ -44,54 +44,104 @@
     </header>
 
     <div class="path-bar">
-        <div><em class="fas fa-envelope"></em>Contact</div>
+        <div><em class="fas fa-newspaper"></em>Blog</div>
     </div>
 
     <main>
-        <div class="flex-column flex-full-w flex-center-v">
-            <div class="flex-column flex-full-w flex-center-v flex-center-h">
-                <form class="contact-form">
-                    <div>
-                        <input class="contact-form-txt-input" type="text" placeholder="Username" minlength="4" required>
-                        <input class="contact-form-txt-input" type="email" placeholder="Email" required>
+        <div class="flex-column flex-full-w flex-center-h">
+            <div class="blog-title">Blog</div>
+            <div class="blog-subtitle">Find all the resources you need</div>
+        </div>
+        <div class="flex-row-res flex-full-w flex-center-h">
+            <div class="flex-column flex-center-h">
+                <div class="article-container">
+                    <a href="#" class="article-image" style="background-image: url(img/cloud-media.jpg);"></a>
+                    <br>
+                    <a href="#" class="article-title">Test article 1</a>
+                    <div class="article-info flex-row-res flex-full-w flex-jc-start">
+                        <div>
+                            <span class="article-date">24.12.2020</span>
+                            by
+                            <span class="article-poster">Dominik Meca</span>
+                        </div>
+                        <span class="article-comment">
+                            <em class="far fa-comment"></em>
+                            0
+                        </span>
+                        <div>
+                            <a class="article-tag" href="#">
+                                Business
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <input class="contact-form-txt-input" type="text" placeholder="Phone" required>
-                        <input class="contact-form-txt-input" type="text" placeholder="Subject" optional>
-                    </div>
-                    <div>
-                        <input class="contact-form-txt-input" type="text" placeholder="Message" multiple required>
-                    </div>
-                    <div>
-                        <input type="submit" placeholder="Send">
-                    </div>
-                </form>
-            </div>
+                </div>
 
-            <div class="flex-column flex-center-h flex-center-v flex-full-w" style="background-color: var(--theme-color-light-gray); height: 75px;">
-                <div class="flex-row" style="font-family: var(--serif-font); font-weight: bold; color: var(--theme-color-darker-gray);">
-                    <div>Follow us<br>Now ;)</div>
-                    <div class="flex-row flex-center-v" style="margin-left: 15px;">
-                        <a href="#"><em class="fa fa-facebook-official"></em></a>&nbsp;&nbsp;
-                        <a href="#"><em class="fa fa-twitter"></em></a>&nbsp;&nbsp;
-                        <a href="#"><em class="fa fa-instagram"></em></a>&nbsp;&nbsp;
-                        <a href="#"><em class="fa fa-google-plus"></em></a>&nbsp;&nbsp;
+                <div class="article-container">
+                    <a href="#" class="article-image" style="background-image: url(img/cloud-ocean.jpg);"></a>
+                    <br>
+                    <a href="#" class="article-title">Test article 2</a>
+                    <div class="article-info flex-row-res flex-full-w flex-jc-start">
+                        <div>
+                            <span class="article-date">24.12.2020</span>
+                            by
+                            <span class="article-poster">Dominik Meca</span>
+                        </div>
+                        <span class="article-comment">
+                            <em class="far fa-comment"></em>
+                            0
+                        </span>
+                        <div>
+                            <a class="article-tag" href="#">
+                                Business
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-container">
+                    <a href="#" class="article-image" style="background-image: url(img/hosting-house.jpg);"></a>
+                    <br>
+                    <a href="#" class="article-title">Test article 3</a>
+                    <div class="article-info flex-row-res flex-full-w flex-jc-start">
+                        <div>
+                            <span class="article-date">24.12.2020</span>
+                            by
+                            <span class="article-poster">Dominik Meca</span>
+                        </div>
+                        <span class="article-comment">
+                            <em class="far fa-comment"></em>
+                            0
+                        </span>
+                        <div>
+                            <a class="article-tag" href="#">
+                                Business
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-column flex-center-h flex-jc-start" style="margin-left: 30px;">
+                <input type="text" class="contact-form-txt-input" placeholder="Search">
+                <div class="blog-sidebar-tile">
+                    <div class="blog-sidebar-header">Categories</div>
+                    <a class="blog-sidebar-item">Business</a>
+                    <a class="blog-sidebar-item">Servers</a>
+                    <a class="blog-sidebar-item">Programming</a>
+                    <a class="blog-sidebar-item">Hosting</a>
+                    <a class="blog-sidebar-item">SEO</a>
+                </div>
+
+                <div class="blog-sidebar-tile">
+                    <div class="blog-sidebar-header">
+                        Follow us! <br><br>
+                        <a href="#"><em class="fa fa-facebook-official"></em></a>
+                        <a href="#"><em class="fa fa-twitter"></em></a>
+                        <a href="#"><em class="fa fa-instagram"></em></a>
+                        <a href="#"><em class="fa fa-google-plus"></em></a>
                         <a href="#"><em class="fa fa-pinterest"></em></a>
                     </div>
                 </div>
             </div>
-
-            <div class="flex-column flex-center-h flex-center-v flex-full-w"
-                style="background: linear-gradient(to right, var(--theme-color-blue), var(--theme-color-light-blue)); height: 75px;"
-            >
-                <div class="flex-row" style="color: var(--theme-color-white); font-family: var(--sans-serif-font);">
-                    <div><em class="fas fa-envelope"></em>&nbsp;dominik.meca.st@vsb.cz</div>&nbsp;&nbsp;
-                    <div><em class="fas fa-phone"></em>&nbsp;+420 123 465 789</div>
-                </div>
-            </div>
-
-            <iframe height="600px" src="https://www.openstreetmap.org/export/embed.html?bbox=18.1591209769249%2C49.8310104778861%2C18.162661492824558%2C49.83249318802505&amp;layer=mapnik&amp;marker=49.831752703695955%2C18.160891234874725" style="border: 1px solid black">
-            </iframe><br/>
         </div>
     </main>
 
