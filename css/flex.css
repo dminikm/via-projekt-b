@@ -24,7 +24,8 @@
     justify-content: space-between;
 }
 
-.flex-jc-start {
+.flex-row-res.flex-h-start,
+.flex-row.flex-h-start {
     justify-content: start;
 }
 
@@ -40,12 +41,25 @@
     justify-content: center;
 }
 
+.flex-row-res.flex-v-start,
+.flex-row.flex-v-start {
+    align-items: flex-start;
+}
+
 .flex-column.flex-center-v {
     justify-content: center;
 }
 
 .flex-column.flex-center-h {
     align-items: center;
+}
+
+.flex-column.flex-h-start {
+    align-items: flex-start;
+}
+
+.flex-column.flex-v-start {
+    justify-content: flex-start;
 }
 
 /* Growth */
@@ -112,5 +126,13 @@
     
     .flex-row-res.flex-center-h {
         align-items: center;
+    }
+
+    .flex-row-res.flex-h-start {
+        align-items: flex-start;
+    }
+
+    .flex-row-res.flex-v-start {
+        justify-content: flex-start;
     }
 }

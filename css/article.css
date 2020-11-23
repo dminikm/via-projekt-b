@@ -87,7 +87,6 @@
 }
 
 .article-info > * {
-    display: inline;
     margin-right: 20px;
     margin-top: 8px;
 }
@@ -110,4 +109,11 @@
 
     padding: 5px;
     font-weight: bold;
+
+    margin: 0px 2px 2px 2px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
