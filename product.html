@@ -66,7 +66,7 @@
 
             <script src="js/Countdown.js"></script>
             <script>
-                let endT = Date.now() + 1000000;//Date.parse('2020-12-24T23:59:00');
+                let endT = /*Date.now() + 1000000;//*/Date.parse('2020-12-24T23:59:00');
                 updateTime(document.getElementById('sale-countdown'), 'Sale ends in {@}!', 'Sale ended!', endT, () => {
                     const priceMark = document.getElementById('price-mark');
                     const regularPrice = priceMark.querySelector('s');
@@ -86,7 +86,7 @@
                     'img/hosting-house.jpg',
                     'img/cloud-media.jpg',
                     'img/cloud-ocean.jpg',
-                    'img/hosting-house.jpg',
+                    'img/city2.jpg',
                 ]);
 
                 document.querySelector('#main-image').addEventListener('click', () => controller.onOpen());

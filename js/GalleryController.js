@@ -23,7 +23,7 @@ class GalleryController {
             <div class="flex-column flex-full-w flex-center-h flex-1">
                 <div class="flex-column flex-full-w flex-center-h flex-center-v flex-1 gallery-image-container">
                 </div>
-                <div class="flex-row flex-center-v flex-full-w flex-h-start gallery-preview-container" style="height: 150px; overflow-x: scroll;">
+                <div class="flex-row flex-center-v flex-full-w flex-h-start gallery-preview-container">
                 </div>
             </div>
         `;
@@ -50,6 +50,23 @@ class GalleryController {
 
         // Select first element
         previewContainer.firstElementChild.click();
+
+        imgContainer.addEventListener('mousemove', (e) => {
+            let img = imgContainer.firstElementChild;
+
+            let percX = Math.min(25, Math.max(-25, ((1 - (e.clientX / imgContainer.clientWidth)) * 100) - 50));
+            let percY = Math.min(25, Math.max(-25, ((1 - (e.clientY / imgContainer.clientHeight)) * 100) - 50));
+
+            img.style.transform = `translate(${percX}%, ${percY}%)`;
+        });
+
+        imgContainer.addEventListener('mouseleave', () => {
+            if (!imgContainer.firstElementChild)
+                return;
+
+            let img = imgContainer.firstElementChild;
+            img.style.transform = '';
+        });
 
         return dialog;
     }
