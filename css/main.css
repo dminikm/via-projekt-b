@@ -12,6 +12,8 @@
 @import "path.css";
 @import "contact-form.css";
 @import "article.css";
+@import "product.css";
+@import "gallery.css";
 
 html, body {
     padding: 0px;

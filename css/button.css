@@ -27,7 +27,8 @@
     background-color: var(--theme-color-gray);
 }
 
-.btn:hover {
+a.btn:hover,
+*.btn[onclick]:hover {
     cursor: pointer;
 }
 

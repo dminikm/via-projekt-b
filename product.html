@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/361a34c661.js" crossorigin="anonymous"></script>
+    <title>Projekt B</title>
+
+    <script src="js/SlideshowController.js"></script>
+    <script src="js/GalleryController.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div id="main-header-logo">
+            <img src="img/logo.png">
+        </div>
+        <nav class="navbar">
+            <div>
+                <a href="index.html" class="navbar-link">Home</a>
+            </div>
+
+            <div class="navbar-expandable-link">
+                <a href="#" class="navbar-link" id="navbar-link-active">Products <em class="fas fa-chevron-down"></em></a>
+                <div class="navbar-hidden-container">
+                    <a href="product.html" class="navbar-link">Server</a>
+                </div>
+            </div>
+
+            <div class="navbar-expandable-link">
+                <a href="#" class="navbar-link">About <em class="fas fa-chevron-down"></em></a>
+                <div class="navbar-hidden-container">
+                    <a href="#" class="navbar-link">Us</a>
+                    <a href="blog.html" class="navbar-link">Blog</a>
+                </div>
+            </div>
+            
+            <a href="contact.html" class="navbar-link">Contact</a>
+            <a href="#" id="navbar-client-area" class="navbar-link"><em class="fa fa-user"></em> Client area</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex-column flex-full flex-center-h">
+            <h1>The raw power of Dedicated Servers</h1>
+            <h4>Get the compute and I/O power of single-tenant dedicated servers</h4>
+
+            <img src="img/server.png" alt="Image of a server" id="main-image">
+
+            <div class="flex-row-res flex-center-h" style="width: 700px">
+                <div class="flex-1"> <em class="fas fa-check-circle"></em> 4x 3.3 GHz CPU </div>
+                <div class="flex-1"> <em class="fas fa-check-circle"></em> 1TB (Mirrored) Storage </div>
+                <div class="flex-1"> <em class="fas fa-check-circle"></em> 16GB Available RAM </div>
+                <div class="flex-1"> <em class="fas fa-check-circle"></em> 15TB Bandwidth </div>
+            </div>
+
+            <div id="sale-countdown" style="color: red;margin-top: 5px;">
+            </div>
+
+            <div class="flex-row flex-center-h">
+                <div class="btn btn-gray" id="price-mark"><s>99.95$</s>&nbsp;60.95$</div>
+                <div class="btn">Order</div>
+            </div>
+
+            <script src="js/Countdown.js"></script>
+            <script>
+                let endT = Date.now() + 1000000;//Date.parse('2020-12-24T23:59:00');
+                updateTime(document.getElementById('sale-countdown'), 'Sale ends in {@}!', 'Sale ended!', endT, () => {
+                    const priceMark = document.getElementById('price-mark');
+                    const regularPrice = priceMark.querySelector('s');
+                    priceMark.innerHTML = regularPrice.innerHTML;
+                });
+            </script>
+            <script>
+                let controller = new GalleryController([
+                    'img/cloud-media.jpg',
+                    'img/cloud-ocean.jpg',
+                    'img/hosting-house.jpg',
+                    'img/cloud-media.jpg',
+                    'img/cloud-ocean.jpg',
+                    'img/hosting-house.jpg',
+                    'img/cloud-media.jpg',
+                    'img/cloud-ocean.jpg',
+                    'img/hosting-house.jpg',
+                    'img/cloud-media.jpg',
+                    'img/cloud-ocean.jpg',
+                    'img/hosting-house.jpg',
+                ]);
+
+                document.querySelector('#main-image').addEventListener('click', () => controller.onOpen());
+            </script>
+        </div>
+
+        <div class="flex-row-res flex-center-h flex-full-w">
+            <div style="width: 60%">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione laborum sunt atque sit quam ipsa eos rerum aliquid. Sapiente fuga deserunt excepturi praesentium facere quaerat quis porro vitae, fugit illo.
+            </div>
+            <div>
+                <div class="product-sidebar-tile">
+                    <div class="product-sidebar-header">Processor</div>
+                    <a class="product-sidebar-item">Processor: Intel Xeon E-2244</a>
+                    <a class="product-sidebar-item">Frequency: 3.3GHz</a>
+                    <a class="product-sidebar-item">Core count: 4</a>
+                    <a class="product-sidebar-item">Cache: 8 MB</a>
+                </div>
+
+                <div class="product-sidebar-tile">
+                    <div class="product-sidebar-header">Memory</div>
+                    <a class="product-sidebar-item">Disk: 1TB</a>
+                    <a class="product-sidebar-item">Disk safety: RAID 1</a>
+                    <a class="product-sidebar-item">RAM: 16GB</a>
+                    <a class="product-sidebar-item">RAM Speed: 2 666MHz</a>
+                    <a class="product-sidebar-item">RAM Type: DDR4</a>
+                </div>
+
+                <div class="product-sidebar-tile">
+                    <div class="product-sidebar-header">Network</div>
+                    <a class="product-sidebar-item">Bandwidth: 15TB/month</a>
+                    <a class="product-sidebar-item">Connection: 1GB/s</a>
+                    <a class="product-sidebar-item">Connection type: Fiber</a>
+                </div>
+
+                <div class="product-sidebar-tile">
+                    <div class="product-sidebar-header">Locations</div>
+                    <a class="product-sidebar-item">Prague, Czech republic</a>
+                    <a class="product-sidebar-item">Frankfurt, Germany</a>
+                    <a class="product-sidebar-item">Beijing, China</a>
+                    <a class="product-sidebar-item">Richmond, Virginia</a>
+                    <a class="product-sidebar-item">Phoenix, Arizona</a>
+                    <a class="product-sidebar-item">Austin, Texas</a>
+                </div>
+
+                <div class="product-sidebar-tile">
+                    <div class="product-sidebar-header">Software</div>
+                    <a class="product-sidebar-item">Operating system: Ubuntu server</a>
+                    <a class="product-sidebar-item">Web server: Apache</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- TODO: Add icons -->
+    <footer class="main-footer">
+        <div class="main-footer-container">
+            <div class="main-footer-navigation">
+                <div class="main-footer-navigation-list">
+                    <h1>Get in touch ;)</h1>
+                    <span>Ostrava</span>
+                    <span>+420 123 456 789</span>
+                    <span>meca.dominik.st@vsb.cz</span>
+                    <span>Monday - Saturday: 8:00 AM - 18:00 PM Friday: Closed</span>
+                </div>
+                <div class="main-footer-navigation-list">
+                    <h1>Products</h1>
+                    <a href="#">Shared Hosting</a>
+                    <a href="#">Cloud Hosting</a>
+                    <a href="#">Dedicated Hosting</a>
+                    <a href="#">Domains</a>
+                    <a href="#">Support</a>
+                    <a href="#">Seo</a>
+                    <a href="#">Web Design</a>
+                    <a href="#">Web Development</a>
+                </div>
+                <div class="main-footer-navigation-list">
+                    <h1>Company</h1>
+                    <a href="#">About us</a>
+                    <a href="#">Client Area</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Knowledge Base</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                </div>
+                <div>
+                    <div class="main-footer-navigation-list">
+                        <h1>Follow us</h1>
+                        <div class="main-footer-navigation-list-icon">
+                            <a href="#"><em class="fa fa-facebook-official"></em></a>
+                            <a href="#"><em class="fa fa-twitter"></em></a>
+                            <a href="#"><em class="fa fa-instagram"></em></a>
+                            <a href="#"><em class="fa fa-google-plus"></em></a>
+                            <a href="#"><em class="fa fa-pinterest"></em></a>
+                        </div>
+                    </div>
+                    <div class="main-footer-navigation-list">
+                        <h1>Payment</h1>
+                        <div class="main-footer-navigation-list-icon">
+                            <a href="#"><em class="fab fa-2x fa-cc-visa"></em></a>
+                            <a href="#"><em class="fab fa-2x fa-cc-mastercard"></em></a>
+                            <a href="#"><em class="fab fa-2x fa-cc-paypal"></em></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer-copyright">
+                <div>
+                    © 2020 Dominik Meca (MEC0037). Studentský projekt.
+                </div>
+                <div>
+                    <a href="#">Terms of services</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

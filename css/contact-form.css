@@ -46,6 +46,10 @@
     outline: 0 !important;
 }
 
+.contact-form > * > input[type="submit"]:hover {
+    cursor: pointer;
+}
+
 .contact-form > * > input[type="submit"] {
     border: 0px;
     background-color: var(--theme-color-white);
