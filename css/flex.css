@@ -66,8 +66,16 @@
     align-items: flex-start;
 }
 
+.flex-column.flex-h-end {
+    align-items: flex-end;
+}
+
 .flex-column.flex-v-start {
     justify-content: flex-start;
+}
+
+.flex-column.flex-v-end {
+    justify-content: flex-end;
 }
 
 /* Growth */
@@ -140,7 +148,15 @@
         align-items: flex-start;
     }
 
+    .flex-row-res.flex-h-end {
+        align-items: flex-end;
+    }
+
     .flex-row-res.flex-v-start {
         justify-content: flex-start;
+    }
+
+    .flex-row-res.flex-v-end {
+        justify-content: flex-end;
     }
 }

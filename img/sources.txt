@@ -1,0 +1,10 @@
+ubuntuInstall.png: https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/c/c36b4880b5e4291ca57e6a51b527c05449fec48e.png
+fiber.jpg: http://hotwirecommunications.com/wp-content/uploads/2018/07/Technology.jpg
+xeon.jpg: https://www.svethardware.cz/intel-zacal-nabizet-cpu-xeon-e-2200-az-8-jader-a-5-ghz/50565/img/1e_575px.jpg
+phpMyAdmin.png: https://upload.wikimedia.org/wikipedia/commons/1/13/PhpMyAdmin-main-en.png?download
+
+server.png: vzor č.2
+logo.png: Vlastní
+
+Obličeje: https://thispersondoesnotexist.com/
+Ostatní: https://www.pexels.com/

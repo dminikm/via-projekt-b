@@ -16,6 +16,8 @@
     font-weight: bold;
 
     margin: 12px;
+
+    user-select: none;
 }
 
 .btn-small {

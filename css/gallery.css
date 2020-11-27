@@ -28,6 +28,10 @@
     max-height: 120px;
 }
 
+.gallery-preview-container > div:last-child {
+    margin-right: 25px;
+}
+
 .gallery-image-container {
     overflow: hidden;
 
@@ -48,7 +52,13 @@
     position: relative;
     max-width: none;
     max-height: none;
+}
 
-    width: 200%;
-    height: 200%;
+dialog {
+    padding: 0px;
+}
+
+.gallery-preview-container::after {
+    content: 'a';
+    visibility: hidden;
 }
